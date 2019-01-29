@@ -2,7 +2,7 @@ server:
   port: 8001
 spring:
   application:
-    name: ltshop-plat-dev
+    name: ltshop-plat
 eureka:
   client:
     service-url:
