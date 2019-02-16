@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: ltshop-product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: admin
+    url: jdbc:mysql:///ltshop
 eureka:
   client:
     service-url:
