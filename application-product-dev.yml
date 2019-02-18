@@ -8,6 +8,14 @@ spring:
     username: root
     password: admin
     url: jdbc:mysql:///ltshop
+feign:
+   hystrix:
+       enabled: true #开启熔断支持
+   client:
+    config:
+      remote-service:            #服务名，填写default为所有服务
+        connectTimeout: 1000    #与服务提供者连接超时的时间
+        readTimeout: 1000       #服务提供者响应的时间
 
 eureka:
   client:
